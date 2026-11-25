@@ -14,24 +14,6 @@ The project explores how AI can support regulatory monitoring and impact assessm
   <em>Figure 1 — LLM-powered IRRBB regulatory monitoring workflow</em>
 </p>
 
-```mermaid
-flowchart TD
-    A[BIS publications] --> B[Date and keyword filtering]
-    B --> C[Download regulatory update PDF]
-    C --> D[Redline-aware PDF extraction]
-    D --> E[Article-level chunking]
-    F[Basel Framework KB: SRP31, SRP98, DIS70] --> G[Extraction and article-level chunking]
-    G --> H[GTE-large embeddings and Chroma vector store]
-    E --> I[Nearest-neighbour article matching]
-    H --> I
-    I --> J[Chapter and distance filtering]
-    J --> K[Agent 1: Row-level regulatory analyst]
-    K --> L[Agent 2: Newsletter editor]
-    K --> M[Structured Excel results]
-    L --> N[Article-referenced regulatory newsletter]
-    J -. Excluded-set diagnostic .-> O[Run same LLM pipeline on low-distance pairs]
-```
-
 ### 1. Regulatory publication monitoring
 
 The notebook scans the [BIS publications website](https://www.bis.org/publications) within a configurable date window and identifies relevant publications using case-insensitive keyword matching on publication titles. It implements pagination, URL deduplication, request retries and download checks.
