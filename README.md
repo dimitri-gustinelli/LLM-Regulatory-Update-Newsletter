@@ -11,8 +11,8 @@ The project explores how AI can support regulatory monitoring and impact assessm
 <p align="center">
   <img src="./BCBS%20IRRBB%20Regulatory%20Workflow.png" width="900">
   <br>
-  <em>Figure 1 — LLM-powered IRRBB regulatory monitoring workflow</em>
 </p>
+
 
 ### 1. Regulatory publication monitoring
 
