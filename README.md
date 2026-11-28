@@ -148,7 +148,7 @@ print(final_newsletter)
 | Output | Description |
 | --- | --- |
 | `IRRBB_REG_db/` | Local persistent Chroma knowledge base |
-| `analyzed_df` | Compared text pairs, new and prior article references, change flags and summaries |
+| `analyzed_df` | Compared text pairs, new and prior article references, change flags and summary of regulatory change |
 | `final_newsletter` | Generated newsletter as a text string displayed in the notebook |
 | `regulatory_analysis_results.xlsx` | Export of the primary article-level analysis |
 | `regulatory_analysis_discarded_results.xlsx` | Diagnostic analysis of pairs excluded by the distance threshold |
