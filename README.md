@@ -32,7 +32,7 @@ These tags are passed to the LLM as part of the regulatory text, with explicit i
 
 ### 3. Article-level chunking
 
-The custom `chunk_by_article()` function uses regulatory article identifiers (e.g. `31.36`, `98.49`, `Article 5`) instead of fixed token lengths to segment documents. It supports provisions spanning multiple pages and retains article identifiers, source metadata, chunk indices and character offsets.
+The custom `chunk_by_article()` function uses regulatory article identifiers (e.g. `31.36`, `98.49`, `Article 5`) instead of fixed token lengths to segment documents.
 
 The reference knowledge base is a snapshot of the [Basel Framework](https://www.bis.org/committees/bcbs/basel-framework), restricted to:
 
@@ -44,7 +44,7 @@ The reference knowledge base is a snapshot of the [Basel Framework](https://www.
 
 The `thenlper/gte-large` sentence-transformer model converts each provision into a 1,024-dimensional embedding. The KB embeddings are stored locally in a Chroma vector database.
 
-For each new chunk, the workflow retrieves its nearest KB counterpart (`K = 1`). Semantic retrieval helps align provisions even when their article numbers have changed. The resulting pairs are filtered using chapter-number consistency and an experimental Chroma distance threshold of `0.016503` (lower scores indicate greater similarity).
+For each new chunk, the workflow retrieves its nearest KB counterpart (`K = 1`). Semantic retrieval helps align provisions even when their article numbers have changed. The resulting pairs are filtered using an experimental Chroma distance threshold of `0.016503` (lower scores indicate greater similarity).
 
 Distance is used as a **screening heuristic**, not as evidence that a regulatory obligation has or has not changed.
 
