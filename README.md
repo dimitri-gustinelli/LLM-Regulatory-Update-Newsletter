@@ -2,9 +2,6 @@
 
 The notebook shows how AI can support regulatory monitoring and impact assessment in banking risk management, particularly for treasury, ALM, IRRBB and regulatory compliance teams. The workflow compares individual provisions against an existing regulatory knowledge base (KB) to distinguish substantive amendments from renumbering and formatting changes. It combines web scraping, semantic retrieval and large language models (LLMs) to identify changes in banking regulation and generate practitioner-oriented newsletters with article-level references.
 
-
-**Current scope:** Basel Committee on Banking Supervision (BCBS). Extensions to EBA, EU and US regulatory frameworks is planned.
-
 ## Workflow
 
 <p align="center">
