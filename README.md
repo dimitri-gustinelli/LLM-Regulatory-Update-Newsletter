@@ -114,11 +114,15 @@ Create a local `config.json` file in the notebook's working directory:
   "OPENAI_API_BASE": "https://api.openai.com/v1"
 }
 ```
+API keys (secret keys) are obtained here: https://platform.openai.com/api-keys
 
-Choose the `MODEL_NAME` among models available on https://developers.openai.com/api/docs/models.
+Choose the `MODEL_NAME` among models available on https://developers.openai.com/api/docs/models
+
 **Do not commit `config.json` or API credentials to GitHub.** 
 
 ### Execution
+
+Ensure that `config.json` and `basel-framework-IRRBB-SRP31-SRP98-DIS70.pdf` are located in the same working directory of the notebook.
 
 1. Open `Reg_Update_IRRBB.ipynb` in Jupyter.
 2. Set the monitoring parameters:
