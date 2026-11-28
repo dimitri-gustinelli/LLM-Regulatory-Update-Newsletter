@@ -68,11 +68,11 @@ Example analyst output schema:
 }
 ```
 
-The editor receives only rows flagged as changes, together with the article references. A human-provided template guides the tone, structure and framing of the final newsletter. The pipeline uses an OpenAI-compatible API; the demonstration is configured with `gpt-6-luna` and temperature `1`.
+The Newsletter Editor analyses only rows flagged as changes, together with the article references. A human-provided template guides the tone, structure and framing of the final newsletter. The pipeline uses an OpenAI-compatible API; the demonstration is configured with `gpt-6-luna` and temperature `1`.
 
 ## Case study: BCBS additional Pillar 2 guidance on IRRBB
 
-The notebook demonstrates the workflow using the consultation on [Interest rate risk in the banking book – additional Pillar 2 guidance](https://www.bis.org/publications/interest-rate-risk-banking-book---additional-pillar-2-guidance), identified in the publication search dated 4–11 November 2026.
+The notebook demonstrates the workflow using the consultation on [Interest rate risk in the banking book – additional Pillar 2 guidance](https://www.bis.org/publications/interest-rate-risk-banking-book---additional-pillar-2-guidance), identified in the publication search dated 11 November 2026.
 
 The generated newsletter highlights themes including:
 
@@ -80,8 +80,6 @@ The generated newsletter highlights themes including:
 - Backtesting, independent model validation and recalibration.
 - Earnings-based risk indicators, stress testing and embedded gains or losses on securities.
 - Supervisory assessment of capital and liquidity positions, and peer-group comparisons.
-
-These are themes from the notebook's generated output, not an independently verified interpretation of final binding requirements. The publication analysed is a consultation.
 
 ### Experimental results
 
