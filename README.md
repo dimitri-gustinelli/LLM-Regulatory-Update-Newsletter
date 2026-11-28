@@ -2,9 +2,9 @@
 
 An automated regulatory intelligence prototype for **Interest Rate Risk in the Banking Book (IRRBB)**, combining web scraping, redline-aware PDF extraction, semantic retrieval and large language models (LLMs) to identify changes in banking regulation and generate practitioner-oriented newsletters with article-level references.
 
-The project explores how AI can support regulatory monitoring and impact assessment in banking risk management, particularly for treasury, ALM, IRRBB and regulatory compliance teams. Rather than summarising an entire publication, the workflow compares individual provisions against an existing regulatory knowledge base (KB) to distinguish substantive amendments from renumbering and formatting changes.
+The notebook shows how AI can support regulatory monitoring and impact assessment in banking risk management, particularly for treasury, ALM, IRRBB and regulatory compliance teams. The workflow compares individual provisions against an existing regulatory knowledge base (KB) to distinguish substantive amendments from renumbering and formatting changes.
 
-**Current scope:** Basel Committee on Banking Supervision (BCBS). Extensions to EBA, EU and US regulatory frameworks are envisaged.
+**Current scope:** Basel Committee on Banking Supervision (BCBS). Extensions to EBA, EU and US regulatory frameworks is planned.
 
 ## Workflow
 
@@ -16,7 +16,7 @@ The project explores how AI can support regulatory monitoring and impact assessm
 
 ### 1. Regulatory publication monitoring
 
-The notebook scans the [BIS publications website](https://www.bis.org/publications) within a configurable date window and identifies relevant publications using case-insensitive keyword matching on publication titles. It implements pagination, URL deduplication, request retries and download checks.
+The notebook scans the [BIS publications website](https://www.bis.org/publications) within a configurable date window and identifies relevant publications using case-insensitive keyword matching on publication titles.
 
 ### 2. Redline-aware PDF extraction
 
