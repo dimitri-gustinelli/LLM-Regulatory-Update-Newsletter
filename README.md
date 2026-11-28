@@ -99,21 +99,10 @@ Two excluded pairs were flagged as changes. The notebook's subsequent inspection
 
 ### Prerequisites
 
-- Python 3.12 (the notebook was developed using Python 3.12.10).
 - Jupyter Notebook or JupyterLab.
 - Internet access for BIS publications, the embedding model and LLM API calls.
-- An API key and endpoint with access to a compatible chat-completions model.
+- An OpenAI API key and endpoint with access to a compatible chat-completions model.
 - A pre-amendment Basel Framework PDF containing SRP31, SRP98 and DIS70, saved in the notebook's working directory as `basel-framework-IRRBB-SRP31-SRP98-DIS70.pdf`.
-
-### Installation
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install jupyter requests beautifulsoup4 "langchain<1" langchain-community langchain-core chromadb pymupdf tiktoken openai sentence-transformers numpy pandas openpyxl
-```
-
-The notebook uses legacy LangChain imports and wrappers. The version constraint above is a compatibility starting point, not a fully tested or locked environment; migration to newer standalone integrations may be required.
 
 ### API configuration
 
@@ -126,7 +115,8 @@ Create a local `config.json` file in the notebook's working directory:
 }
 ```
 
-Set `MODEL_NAME` in the notebook to a model available through your configured endpoint that supports the parameters used by the pipeline, including JSON-object responses for the analyst. The model identifier in the demonstration may not be available through every endpoint.
+Choose the `MODEL_NAME` among models available on https://developers.openai.com/api/docs/models.
+
 
 **Do not commit `config.json` or API credentials to GitHub.** Add the file to `.gitignore`.
 
