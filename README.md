@@ -116,13 +116,11 @@ Create a local `config.json` file in the notebook's working directory:
 ```
 
 Choose the `MODEL_NAME` among models available on https://developers.openai.com/api/docs/models.
-
-
-**Do not commit `config.json` or API credentials to GitHub.** Add the file to `.gitignore`.
+**Do not commit `config.json` or API credentials to GitHub.** 
 
 ### Execution
 
-1. Open `Reg_Update_IRRBB(1).ipynb` in Jupyter. Optionally rename it to `Reg_Update_IRRBB.ipynb` before publication.
+1. Open `Reg_Update_IRRBB.ipynb` in Jupyter.
 2. Set the monitoring parameters:
 
    ```python
