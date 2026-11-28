@@ -55,7 +55,7 @@ Distance is used as a **screening heuristic**, not as evidence that a regulatory
 | **Regulatory Analyst** | `new_text`, `kb_text` | Compare obligations, scope, definitions, thresholds, formulas and reporting requirements; distinguish amendments from formatting or renumbering | Structured JSON for each article pair |
 | **Newsletter Editor** | Flagged changes, article references and a human-provided template | Consolidate related amendments into thematic, practitioner-focused takeaways | Regulatory newsletter with article references |
 
-The analyst runs in parallel using `ThreadPoolExecutor` (eight workers by default). Its system prompt explicitly instructs the model to respect insertion/deletion tags, avoid unsupported claims and flag ambiguous cases for human review.
+The Regulatory Analyst agent is explicitly instructed to respect insertion/deletion tags, avoid unsupported claims and flag ambiguous cases for human review.
 
 Example analyst output schema:
 
