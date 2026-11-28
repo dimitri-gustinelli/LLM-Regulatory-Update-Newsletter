@@ -1,8 +1,8 @@
 # AI-Powered IRRBB Regulatory Monitoring
 
-An automated regulatory intelligence prototype for **Interest Rate Risk in the Banking Book (IRRBB)**, combining web scraping, redline-aware PDF extraction, semantic retrieval and large language models (LLMs) to identify changes in banking regulation and generate practitioner-oriented newsletters with article-level references.
+The notebook shows how AI can support regulatory monitoring and impact assessment in banking risk management, particularly for treasury, ALM, IRRBB and regulatory compliance teams. The workflow compares individual provisions against an existing regulatory knowledge base (KB) to distinguish substantive amendments from renumbering and formatting changes. 
+The workflow combines web scraping, semantic retrieval and large language models (LLMs) to identify changes in banking regulation and generate practitioner-oriented newsletters with article-level references.
 
-The notebook shows how AI can support regulatory monitoring and impact assessment in banking risk management, particularly for treasury, ALM, IRRBB and regulatory compliance teams. The workflow compares individual provisions against an existing regulatory knowledge base (KB) to distinguish substantive amendments from renumbering and formatting changes.
 
 **Current scope:** Basel Committee on Banking Supervision (BCBS). Extensions to EBA, EU and US regulatory frameworks is planned.
 
